@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.MainContainer {
+  scrollbar-width: 5px;
+  scrollbar-color: transparent transparent;
+}
+.MainContainer::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 28px;
+}
+.MainContainer::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* background-color: rgb(148, 30, 112); */
+}
+
+/* Control SideNav on smallscreens */
+.ShrinkOnSmallScreen {
+  max-width: 0px !important;
+}
+.ExpandOnSmallScreen {
+  min-width: 210px !important;
+  max-width: 210px !important;
+}
+
+.ItemsCarousel > * {
+  scroll-snap-align: center;
+}
