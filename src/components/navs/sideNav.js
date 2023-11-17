@@ -102,7 +102,7 @@ export default function SideNav() {
                   key={i}
                   onClick={() => setCurrent(link.id)}
                 >
-                  <a href="link#" className={"flex pr-4 font-[600] relative"}>
+                  <a href="#" className={"flex pr-4 font-[600] relative"}>
                     <Icon path={link.icon} className="mr-3" size={1}></Icon>
                     <span className="mt-[3px]">{link.title}</span>
                     {link.dropDown ? (
