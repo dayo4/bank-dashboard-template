@@ -126,9 +126,31 @@ export default function Charts() {
   return (
     <div className="flex justify-between gap-5 flex-wrap mb-12 w-full ">
       <Card className="basis-full xl:basis-[calc(75%-20px)] shadow-lg rounded-xl">
-        <CardHeader floated={false} shadow={false} className="rounded-none">
-          <div className="text-xl font-bold">User Inflow Statistics</div>
-          <p className="text-base text-gray-500">Nov - July</p>
+        <CardHeader
+          floated={false}
+          shadow={false}
+          className="rounded-none flex items-center justify-between"
+        >
+          <div>
+            <div className="text-xl font-bold">User Inflow Statistics</div>
+            <p className="text-base text-gray-500">Nov - July</p>
+          </div>
+          <div className="flex">
+            <div className="mr-3">
+              <div className="flex items-center text-xl font-bold text-gray-700 ">
+                <span className="p-1 h-1 w-1 rounded-full bg-blue-800 mr-2"></span>
+                <span>AGENTS</span>
+              </div>
+              <div className="text-base ml-5">674 287</div>
+            </div>
+            <div>
+              <div className="flex items-center text-xl font-bold text-gray-700 ">
+                <span className="p-1 h-1 w-1 rounded-full bg-green-700 mr-2"></span>
+                <span>USERS</span>
+              </div>
+              <div className="text-base ml-5">456 287</div>
+            </div>
+          </div>
         </CardHeader>
         <CardBody
           id="LineChartCont"
